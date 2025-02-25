@@ -1,0 +1,87 @@
+/* Reset margini e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stile del body */
+  body {
+    font-family: 'ubuntu';
+    background-color: #fdf3e7;
+  }
+  
+/* Navbar aggiornata */
+.navbar {
+    background-color: #fdb813;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: relative; /* Permette di posizionare gli elementi in modo assoluto */
+  }
+  
+ /* Ridimensionamento del logo */
+.navbar .logo img {
+    height: 50px; /* Dimensione più piccola */
+    width: auto; /* Mantiene le proporzioni corrette */
+    object-fit: contain; /* Assicura che l'immagine non venga deformata */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin: 0 auto; /* Centra i link */
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fdf3e7;
+  }
+  
+  .hero-text {
+    max-width: 40%;
+  }
+  
+  .hero-text h1 {
+    font-size: 60px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .order-button {
+    background-color: #e63946;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 50px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .hero-image img {
+    width: 550px; /* Spazio per l'immagine della pizza */
+    border-radius: 10px;
+    transform: translateX(-80px);
+  }
+  
