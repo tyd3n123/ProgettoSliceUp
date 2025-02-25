@@ -1,91 +1,95 @@
 /* Reset margini e padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Stile del body */
-  body {
-    font-family: 'ubuntu';
-    background-color: #fdf3e7;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stile del body */
+body {
+  font-family: 'ubuntu';
+  background-color: #fdf3e7;
+}
 
 
 
 /* Navbar aggiornata */
 .navbar {
-    background-color: #fdb813;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    position: relative; /* Permette di posizionare gli elementi in modo assoluto */
-  }
- /* Ridimensionamento del logo */
+  background-color: #fdb813;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  position: relative; /* Permette di posizionare gli elementi in modo assoluto */
+}
+/* Ridimensionamento del logo */
 .navbar .logo img {
-    height: 50px; /* Dimensione più piccola */
-    width: auto; /* Mantiene le proporzioni corrette */
-    object-fit: contain; /* Assicura che l'immagine non venga deformata */
-  }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 100px;
-    margin: 0 auto; /* Centra i link */
-  }
-  .nav-links li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    font-size: 18px;
-  }
+  height: 50px; /* Dimensione più piccola */
+  width: auto; /* Mantiene le proporzioni corrette */
+  object-fit: contain; /* Assicura che l'immagine non venga deformata */
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  margin: 0 auto; /* Centra i link */
+}
+.nav-links li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+}
 
 
 /*Menu  a destra con carrello a sinistra*/
-  .container{
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin: 50px;
-  }
+.container{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
 
-  .grid-pizze{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
+.grid-pizze{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 50px;
+}
 
-  }
+#img1{
+  border-radius: 30px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
 
-  #pizza1:hover{
-    filter: brightness(0) invert(1); /* Cambia il colore a bianco */
-  }
+#img1:hover{
+  filter: brightness(1.3);
+}
 
+.scritte{
+  width: 300px;          /* Larghezza del rettangolo */
+  height: 550px;         /* Altezza del rettangolo */
+  background-color: #ffffff;  /* Colore di sfondo */ 
+  border-radius: 10px;   /* Angoli arrotondati */
+  padding: 20px;         /* Spazio interno */
+  margin-right:100px ;
+}
 
-  .scritte{
-    width: 300px;          /* Larghezza del rettangolo */
-    height: 550px;         /* Altezza del rettangolo */
-    background-color: #ffffff;  /* Colore di sfondo */ 
-    border-radius: 10px;   /* Angoli arrotondati */
-    padding: 20px;         /* Spazio interno */
-    margin-right:100px ;
-  }
-  
-  .scritte .btn{
-    padding: 15px 80px;
-    transform: translateY(330px);
-    border-radius: 10px;
-    margin-left: 10px;
-    background-color: #ff0000;
-    color: #ffffff;
-    font-style: bold;
-    font-size: 10px;
-  }
+.scritte .btn{
+  padding: 15px 80px;
+  transform: translateY(330px);
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-style: bold;
+  font-size: 10px;
+}
 
 .btn:hover{
-  cursor: pointer;
+cursor: pointer;
 }
 
 

@@ -32,11 +32,8 @@
     
 <div class="container">
     <div class="scritte">
-      <h1>Carrello:</h1>
-        <ul>    
-            <li>pizza 1</li>
-            <li>pizza 2</li>
-        </ul>
+      <ul>Carrello:</ul>
+      <il id="carrello"> </il> <!--do l'id al UL che scrive quello che gi darò con JS-->
 
         <a href="cart.html">
         <button class="btn">Vai al Carrello </button>
@@ -46,8 +43,8 @@
 
         <div class="grid-pizze">
               <div id="pizza1">
-                  <img id="img1" src="/Immagini/pizzamenu.png" width="400px">
-                  <p>Nome pizza</p>
+                  <img id="img1" src="/Immagini/pizzamenu.png" data-nome="Pizza margherita" width="400px">
+                  <p>Margherita</p>
                   <p>15,99€</p>
               </div>
               <div id="pizza2">
@@ -67,6 +64,8 @@
               </div>
         </div>
 </div>
+
+<script src="menuRistoranti.js"></script>
 
 </body>
 </html>
