@@ -1,5 +1,5 @@
 
-/*
+
 function geocodeAddress(address) {
     var url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`;
 
@@ -11,20 +11,14 @@ function geocodeAddress(address) {
                 var lon = data[0].lon;
                 console.log(`Coordinate trovate: Lat: ${lat}, Lon: ${lon}`);
 
-                // Aggiungi il marker alla mappa
-                var marker = L.marker([lat, lon]).addTo(map)
-                    .bindPopup(`📍 ${address}<br>Lat: ${lat}, Lon: ${lon}`)
-                    .openPopup();
 
-
-
-                // Centra la mappa sul risultato
-                map.setView([lat, lon], 13);
-            } else {
-                alert("Indirizzo non trovato!");
-            }
+                let coordinateLat = sessionStorage.setItem("coordinateLat",JSON.parse(lat));
+                let coordinateLon = sessionStorage.setItem("coordinateLon",JSON.parse(lon));
+                console.log("coordinateLat");
+                console.log("coordinateLon");
+                      
+            } 
         })
-        .catch(error => console.error('Errore:', error));
 }
         
-*/
+

@@ -4,12 +4,7 @@
          mapLink = "<a href='http://openstreetmap.org'>OpenStreetMap</a>";
          L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: 'Leaflet &copy; ' + mapLink + ', contribution', maxZoom: 18 }).addTo(map);
  
- //      var taxiIcon = L.icon({
- //		iconUrl: 'img/taxi.png',
- //		iconSize: [70, 70]
- //	})
- 
- var marker = L.marker([45.303755, 9.498528]).addTo(map); //, { icon: taxiIcon }).addTo(map);
+var marker = L.marker([45.303755, 9.498528]).addTo(map);
  marker.bindPopup("Slice Up!").openPopup();
  
  
@@ -48,5 +43,18 @@
              }).addTo(map);
          });
  
- 
- 
+let latString = sessionStorage.getItem("coordinateLat");
+let lonString = sessionStorage.getItem("coordinateLon");
+let latNumber = parseFloat(latString);
+let lonNumber = parseFloat(lonString);
+console.log(latNumber);
+console.log(lonNumber);
+
+var marker1 = L.marker([latNumber, lonNumber]).addTo(map);
+
+/*
+         // Aggiungi il marker alla mappa
+         var marker = L.marker([lat, lon]).addTo(map)
+         .bindPopup(`📍 ${address}<br>Lat: ${lat}, Lon: ${lon}`)
+         .openPopup();
+*/
