@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrello</title>
 
     <link rel = "stylesheet" href = "cart.css">
 
@@ -27,9 +27,25 @@
       </ul>
     </nav>
   </header>
+<hr>
 
+  <h2> Carrello</h2>
+
+<div>
+  <input type="text" id="address" placeholder="Inserisci un indirizzo">
+  <input type="text" id="nome" placeholder="Inserisci il tuo nome">
+  <input type="text" id="cognome" placeholder="Inserisci il tuo cognome">
   <hr>
 
+  <button onclick="geocodeAddress(document.getElementById('address').value)">Checkout</button>
+
+  
+
+
+
+</div>
+ 
+<script src="cart.js"></script>
 
 </body>
 </html>
