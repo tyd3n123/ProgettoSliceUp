@@ -1,44 +1,114 @@
 /* Reset margini e padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Stile del body */
-  body {
-    font-family: 'ubuntu';
-    background-color: #fdf3e7;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stile del body */
+body {
+  font-family: 'ubuntu';
+  background-color: #fdf3e7;
+}
 
 
 /* Navbar aggiornata */
 .navbar {
-    background-color: #fdb813;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    position: relative; /* Permette di posizionare gli elementi in modo assoluto */
-  }
-  
- /* Ridimensionamento del logo */
+  background-color: #fdb813;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  position: relative; /* Permette di posizionare gli elementi in modo assoluto */
+}
+
+/* Ridimensionamento del logo */
 .navbar .logo img {
-    height: 50px; /* Dimensione più piccola */
-    width: auto; /* Mantiene le proporzioni corrette */
-    object-fit: contain; /* Assicura che l'immagine non venga deformata */
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 100px;
-    margin: 0 auto; /* Centra i link */
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    font-size: 18px;
-  }
+  height: 50px; /* Dimensione più piccola */
+  width: auto; /* Mantiene le proporzioni corrette */
+  object-fit: contain; /* Assicura che l'immagine non venga deformata */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  margin: 0 auto; /* Centra i link */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+}
+
+/*----------------------------------------------------*/
+
+#pannello-utente{
+  display: inline-block;
+  background-color: white;
+  border-radius: 15px;
+  float: right;
+  margin-right: 30px;
+  zoom: 1.5;
+}
+
+#items{
+display: inline-block;
+margin: 10px; 
+margin-top: 15px;
+}
+
+
+#dati-utente{
+margin:10px;
+margin-top:5px;
+}
+#address{
+  display: inline-block;
+  margin: 5px;
+}
+#nome{
+  display: block;
+  margin: 5px;
+  margin-bottom: 9px;
+}
+#cognome{
+  display: block;
+  margin: 5px;
+}
+
+
+#totale{
+  display: inline-block;
+  margin:10px;
+}
+
+#btn-invioDati{
+margin: 10px;
+}
+
+.btn-invioDati1{
+  margin: 6px;
+  padding: 8px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ff0000;
+  color: white;
+  font-family: "ubuntu";
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.1s, background-color 0.1s;
+}
+
+.btn-invioDati1:hover{
+  opacity: 0.8;
+  background-color:hsl(0, 100%, 40%);
+  box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.btn-invioDati1:active{
+  color: #ff0000;
+  background-color: white;
+}
+

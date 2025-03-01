@@ -9,8 +9,15 @@ img1.onclick = function () {
     li.textContent = nomePizza;
     carrello.appendChild(li);
 
-    // Salva nel localStorage
-    localStorage.setItem("Margherita", nomePizza);
-
-    console.log("Pizza salvata nel localStorage:", nomePizza);
+    // Salva nel sessionStorage
+    sessionStorage.setItem("Margherita", nomePizza);
+    
+    let base64string = img1.src;
+    sessionStorage.setItem("SavedImage", base64string);
+    
+    console.log("Immagine salvata nel sessionStorage", base64string);
+    console.log("Pizza salvata nel sessionStorage:", nomePizza);
 };
+
+
+

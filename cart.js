@@ -20,5 +20,21 @@ function geocodeAddress(address) {
             } 
         })
 }
-        
+
+
+
+let PrimoPulsante = document.getElementById("salva-dati");
+let SecondoPulsante = document.getElementById("checkout");
+
+SecondoPulsante.disabled = true;
+
+PrimoPulsante.addEventListener("click", function() {
+        SecondoPulsante.disabled = false;
+        PrimoPulsante.disabled = true;
+});
+
+let PizzaImg = sessionStorage.getItem("Margherita");
+let PizzaNome = sessionStorage.getItem("SavedImage");
+console.log(PizzaImg);
+console.log(PizzaNome);
 

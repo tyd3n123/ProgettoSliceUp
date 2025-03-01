@@ -29,25 +29,38 @@
   </header>
 <hr>
 
-  <h2> Carrello</h2>
+<h2> Carrello</h2>
 
-<div>
-  <input type="text" id="address" placeholder="Inserisci un indirizzo">
-  <input type="text" id="nome" placeholder="Inserisci il tuo nome">
-  <input type="text" id="cognome" placeholder="Inserisci il tuo cognome">
-  <hr>
-
-  <button onclick="geocodeAddress(document.getElementById('address').value)">Salva Dati</button>
-
-  <a href="mappa.html"> 
-  <button> Checkout</button>
-</a>
- 
-
+<div id="pannello-utente">
+  <div id="parte-item">
+    <h3 id="items"> Items: </h3>
+    <label id="tot-items">0</label>
+  </div>
   
 
+  <div id="dati-utente">
+    <input type="text" id="address" placeholder="Inserisci il tuo indirizzo">
+    <input type="text" id="nome" placeholder="Inserisci il tuo nome">
+    <input type="text" id="cognome" placeholder="Inserisci il tuo cognome">
+  </div>
+
+  <hr class="divisore">
+
+  <div>
+    <div id="parte-totale">
+      <h3 id="totale">Totale:</h3>
+      <label id="tot-totale">0</label>
+    </div>
 
 
+    <div id="btn-invioDati">
+      <button class="btn-invioDati1" id="salva-dati" onclick="geocodeAddress(document.getElementById('address').value)">Invia Dati</button> 
+      <a href="RiderMappa.html"> 
+      <button class="btn-invioDati1" id="checkout"> Checkout</button>
+      </a>
+    </div>
+  </div>
+  
 </div>
  
 <script src="cart.js"></script>
