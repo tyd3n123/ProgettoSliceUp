@@ -7,7 +7,6 @@
 var marker = L.marker([45.303755, 9.498528]).addTo(map); 
 marker.bindPopup("Slice Up!").openPopup();
 
-
 // Creazione di un cerchio attorno a un punto
 var circle = L.circle([45.3099, 9.5009], {
 color: "blue",         // Colore bordo
@@ -31,10 +30,15 @@ pizzeria1.on('mouseover', function() {
     this.openPopup();
 });
 // Chiudi il popup quando il mouse esce
-pizzeria1.on('mouseout', function() {
+pizzeria1.on('mouseout', function()  {
     this.closePopup();
 });
-
+    pizzeria1.on('click', function() {
+        sessionStorage.setItem("coordinate-pizzeriaLat", JSON.parse(45.31354101534006));
+        sessionStorage.setItem("coordinate-pizzeriaLon", JSON.parse(9.497417886649474));
+        
+        console.log("Pizzeria 1 salvata:", sessionStorage.getItem('coordinate-pizzeriaLat'), sessionStorage.getItem('coordinate-pizzeriaLon'));
+    });
 
 
 var pizzeria2 = L.marker([45.30973930473166, 9.50638690530139]).addTo(map);
@@ -50,6 +54,15 @@ pizzeria2.on('mouseover', function() {
 pizzeria2.on('mouseout', function() {
     this.closePopup();
 });
+    pizzeria2.on('click', function() {
+        sessionStorage.setItem("coordinate-pizzeriaLat", JSON.stringify(45.30973930473166));
+        sessionStorage.setItem("coordinate-pizzeriaLon", JSON.stringify(9.50638690530139));
+    
+        console.log("Pizzeria 2 salvata:", sessionStorage.getItem('coordinate-pizzeriaLat'), sessionStorage.getItem('coordinate-pizzeriaLon'));
+    });
+  
+
+
 
 
 var pizzeria3 = L.marker([45.30065023519617, 9.499927746348758]).addTo(map);
