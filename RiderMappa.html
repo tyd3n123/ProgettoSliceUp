@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Delivery</title>
+
+    <!-- Collegamento al file CSS esterno -->
+    <link rel="stylesheet" href="RiderMappa.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Esri Leaflet -->
+    <script src="https://unpkg.com/esri-leaflet@3.0.14/dist/esri-leaflet.js"></script>
+
+    <!-- leafleting routing machine -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+    <!-- leafleting routing machine js -->
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+        <div class="logo">
+
+            <!-- Spazio per il logo -->
+            <img src="/Immagini/logonero.png" alt="Slice Up Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Ristoranti.html">Ristoranti</a></li>
+            <li><a href="cart.html">Carrello</a></li>
+        </ul>
+        </nav>
+    </header>
+
+
+
+    <div class="contenitoreMapRet">
+        <div class="container">
+            <div id="map"></div>
+        </div>
+        <div class="mappa-interattiva">
+            <button id="startButton">Simulazione Rider</button>
+            <p>Prima tappa: non raggiunta</p>
+            <p>Destinazione: non raggiunta</p>
+        </div>
+    </div>
+   
+    <div class="popUp-destinazione">
+        <div class="contenuto-popUp">
+            <span class="chiudi-popup">&times;</span>
+            <p>Destinazione raggiunta con successo!!</p>
+        </div>
+    </div>
+
+
+
+    <script src="RiderMappa.js"></script>
+</body>
+</html>
+

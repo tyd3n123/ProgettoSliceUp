@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'ubuntu', 'arial';
+    background-color: rgb(253, 243, 231);
+  }
+
+ /*----------------------------------------------------*/
+
+/* Navbar aggiornata */
+.navbar {
+    background-color: #fdb813;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: relative; 
+  }
+  
+ /* Ridimensionamento del logo */
+.navbar .logo img {
+    height: 50px; 
+    width: auto; 
+    object-fit: contain; 
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    margin: 0 auto; 
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+  }
+
+ /*----------------------------------------------------*/
+
+
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenitore principale */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 0;
+    background-color:rgb(253, 243, 231); 
+}
+
+
+
+/* Mappa */
+#map {
+    width: 100%;
+    height: 90vh; /* Occupa l'80% dell'altezza della finestra */
+    border: 2px solid #ccc; /* Bordo sottile grigio */
+}
+
+#startButton{
+    margin: 10px;
+    margin-left:15px;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    border:none;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#startButton:hover{
+    background-color: rgb(199, 0, 0);
+}
+#startButton:active{
+    background-color: rgb(255, 78, 78);
+}
+
+#map {
+    width: 95%;
+    height: 70vh;
+    position: relative;
+    z-index: 2;
+}
+
+.leaflet-routing-container .leaflet-bar .leaflet-control{
+    display: none;
+}
+
+.leaflet-routing-alt{
+    display:none;
+}
+
+
+.contenitoreMapRet{
+    display: flex;
+    gap: 0;
+}
+    .mappa-interattiva{
+        width: 300px;
+        height: 700px;
+        background-color: white;
+    }
+
+
+.popUp-destinazione{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;   
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left:0;
+    z-index: 100;
+}
+.popUp-destinazione.attiva{
+    display: flex;
+    position: fixed;
+    z-index: 120;
+}
+    .contenuto-popUp{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1.5rem;
+        background-color: white;
+        padding: 2rem;
+        border-radius: 2rem;
+    }
+

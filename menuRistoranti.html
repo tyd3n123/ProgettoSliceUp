@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menù Ristoranti</title>
+    <link rel="stylesheet" href="menuRistoranti.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+          <div class="logo">
+            <!-- Spazio per il logo -->
+            <img src="/Immagini/logonero.png" alt="Slice Up Logo">
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Ristoranti.html">Ristoranti</a></li>
+            <li><a href="cart.html">Carrello</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <hr>
+    
+<div class="container">
+    <div class="scritte">
+      <div id="tabella-carrello">
+        <ul>Carrello:</ul>
+        <il id="carrello"> </il> <!--do l'id al UL che scrive quello che gi darò con JS-->
+      </div>
+      
+      <a href="cart.html">
+      <button class="btn">Vai al Carrello </button>
+      </a>
+    </div>
+
+        <div class="grid-pizze">
+              <div id="pizza1">
+                  <img id="img1" src="/Immagini/pizzamenu.png" data-nome="Pizza margherita" width="400px">
+                  <p>Margherita</p>
+                  <p class="js-prezzo1">7,99€</p>
+              </div>
+              <div id="pizza2">
+                  <img id="img2" src="/Immagini/pizzamenu.png" data-nome="Pizza Diavola" width="400px">
+                  <p>Diavola</p>
+                  <p class="js-prezzo2">9,99€</p>
+              </div>
+              <div id="pizza3">
+                  <img id="img3" src="/Immagini/pizzamenu.png" data-nome="Pizza Capricciosa" width="400px">
+                  <p>Capricciosa</p>
+                  <p class="js-prezzo3">9,99€</p>
+              </div>
+              <div id="pizza4">
+                  <img id="img4" src="/Immagini/pizzamenu.png" data-nome="Pizza Prosciutto" width="400px">
+                  <p>Prosciutto</p>
+                  <p class="js-prezzo4">8,99€</p>
+              </div>
+        </div>
+</div>
+
+
+
+<script src="menuRistoranti.js"></script>
+
+</body>
+</html>
