@@ -89,6 +89,10 @@ if (latString && lonString) {
                         console.log("⏱️ Ripartenza dopo la pausa...");
                         moveMarker();
                     }, 3000);
+
+                    let primaTappa = document.querySelector('.prima-tappa');
+                    primaTappa.innerHTML = "Prima tappa: Raggiunta!! ";
+
                 } else {
                     i++;
                     setTimeout(moveMarker, 100);
@@ -103,6 +107,8 @@ if (latString && lonString) {
                     modale.classList.remove('attiva');
                 })
                 console.log("🏁 Marker arrivato alla destinazione finale.");
+                let destinazione = document.querySelector('.destinazione');
+                destinazione.innerHTML = "Destinazione Raggiunta!!";
             }
         }
         
