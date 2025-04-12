@@ -28,7 +28,7 @@ function salvaPizza(img, nomeP) {
     listaPizze.push({ nome: nomePizza, prezzo: prezzo });
 
     const li = document.createElement("li");
-    li.textContent = `${nomePizza}  -  ${prezzo}`;
+    li.textContent = `${nomePizza}  -  ${prezzo} €` ;
     carrello.appendChild(li);
 
     sessionStorage.setItem("ListaPizze", JSON.stringify(listaPizze));

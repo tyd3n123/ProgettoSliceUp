@@ -122,3 +122,8 @@ body {
 display:block;
 height: 30px;
 }
+
+.dettagli-pizza{
+  display: flex;
+  gap: 0.5rem;
+}

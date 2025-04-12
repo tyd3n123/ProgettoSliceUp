@@ -35,7 +35,7 @@ if (latString && lonString) {
     //Marker mobile che si muoverà lungo il percorso
     var movingMarker = L.marker([45.303755, 9.498528], {
         icon: L.icon({
-            iconUrl: 'Immagini/riderpizza.png', 
+            iconUrl: '/Immagini/riderpizza.png', 
             iconSize: [50, 50]
         })
     }).addTo(map);

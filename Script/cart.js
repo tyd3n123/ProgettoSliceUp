@@ -39,7 +39,7 @@ PrimoPulsante.addEventListener("click", function() {
             for (let i = 0; i < listaPizze.length; i++) {
                 carrelloHTML += `
                 <div class='listaCart' data-id="${i}">
-                    <p>${listaPizze[i].nome} - ${listaPizze[i].prezzo}</p>
+                    <p>${listaPizze[i].nome} - ${listaPizze[i].prezzo} € </p>
                     <button onclick="rimuovi(${i})" class="pulsante-rimuovi">Rimuovi</button>
                 </div>
                 `;  
@@ -51,16 +51,23 @@ PrimoPulsante.addEventListener("click", function() {
         }
         document.querySelector('.carrello').innerHTML = carrelloHTML;
     }
-    mostraCarrello();
+mostraCarrello();
 
     function rimuovi(index){
         listaPizze.splice(index, 1)
         mostraCarrello();
     }
 
-function aggiornaConteggioPizze(){
-        let numeroTotalePizze = listaPizze.length;
-        document.querySelector('.tot-items').innerText = numeroTotalePizze;
-    }
+const totItems = document.getElementById('tot-items');
+totItems.innerHTML = listaPizze.length;
 
-aggiornaConteggioPizze();
+
+let totalePrezzoPizze = 0; // Deve essere un numero
+
+for (let i = 0; i < listaPizze.length; i++) {
+    let prezzoPizza = parseFloat(listaPizze[i].prezzo); // assicurati che sia un numero
+    totalePrezzoPizze += prezzoPizza;
+}
+
+let totalePrezzo = document.getElementById('tot-totale');
+totalePrezzo.innerHTML = totalePrezzoPizze.toFixed(2); // ora funziona
