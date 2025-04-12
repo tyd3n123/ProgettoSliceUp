@@ -21,14 +21,14 @@ radius: 2100 // Raggio casuale raddoppiato
 // Creazione di un marker per ogni ristorante
 var pizzeria1 = L.marker([45.31354101534006, 9.497417886649474], {
     icon: L.icon({
-        iconUrl: 'Immagini/IlPirata.png',
+        iconUrl: '/Immagini/IlPirata.png',
         iconSize: [30, 40]
     })
 }).addTo(map);
     pizzeria1.bindPopup("Pizzeria Il pirata");
     pizzeria1.on('click', function()
     {
-    window.location.href = 'menuRistoranti.html'; // Apre la pagina del menù
+    window.location.href = '/HTML/menuRistoranti.html'; // Apre la pagina del menù
     });
     // Apri il popup quando il mouse entra
     pizzeria1.on('mouseover', function() {
@@ -48,13 +48,13 @@ var pizzeria1 = L.marker([45.31354101534006, 9.497417886649474], {
 
 var pizzeria2 = L.marker([45.30973930473166, 9.50638690530139], {
     icon: L.icon({
-        iconUrl: 'Immagini/Calicantus.png',
+        iconUrl: '/Immagini/Calicantus.png',
         iconSize: [30, 40]
     })
 }).addTo(map);
     pizzeria2.bindPopup("Pizzeria Calicantus");
     pizzeria2.on('click', function() {
-        window.location.href = 'menuRistoranti.html'; // Apre la pagina del menù
+        window.location.href = '/HTML/menuRistoranti.html'; // Apre la pagina del menù
     });
     // Apri il popup quando il mouse entra
     pizzeria2.on('mouseover', function() {
@@ -77,13 +77,13 @@ var pizzeria2 = L.marker([45.30973930473166, 9.50638690530139], {
 
 var pizzeria3 = L.marker([45.30065023519617, 9.499927746348758], {
     icon: L.icon({
-        iconUrl: 'Immagini/AltaMarea.png',
+        iconUrl: '/Immagini/AltaMarea.png',
         iconSize: [30, 40]
     })
 }).addTo(map);
     pizzeria3.bindPopup("Pizzeria Alta marea");
     pizzeria3.on('click', function() {
-        window.location.href = 'menuRistoranti.html'; // Apre la pagina del menù
+        window.location.href = '/HTML/menuRistoranti.html'; // Apre la pagina del menù
     });
         // Apri il popup quando il mouse entra
         pizzeria3.on('mouseover', function() {
