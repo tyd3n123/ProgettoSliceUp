@@ -101,11 +101,15 @@ if (latString && lonString) {
                 const modale = document.querySelector('.popUp-destinazione');
                 const pulsanteChiudi = document.querySelector('.chiudi-popup');
 
+                const audio = new Audio('/audio/victory.mp3');
+                audio.play();
+
                 modale.classList.add('attiva');
                 
                 pulsanteChiudi.addEventListener("click", () => {
                     modale.classList.remove('attiva');
-                })
+                });
+
                 console.log("🏁 Marker arrivato alla destinazione finale.");
                 let destinazione = document.querySelector('.destinazione');
                 destinazione.innerHTML = "Destinazione Raggiunta!!";
