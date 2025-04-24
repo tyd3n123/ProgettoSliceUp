@@ -52,10 +52,11 @@
     box-sizing: border-box;
 }
 
+
 /* Contenitore principale */
 .container {
     width: 100%;
-    height: 100vh;
+    height: 50%;
     display: flex;
     gap: 0;
     background-color:rgb(253, 243, 231); 
@@ -66,20 +67,21 @@
 /* Mappa */
 #map {
     width: 100%;
-    height: 90vh; /* Occupa l'80% dell'altezza della finestra */
+    height: 100%; /* Occupa l'80% dell'altezza della finestra */
     border: 2px solid #ccc; /* Bordo sottile grigio */
 }
 
 #startButton{
     margin: 10px;
     margin-left:15px;
-    padding:10px;
-    padding-left:20px;
-    padding-right:20px;
+    padding:20px;
+    padding-left:50px;
+    padding-right:50px;
+    font-size: 20px;
     border:none;
     background-color: red;
     color: white;
-    border-radius: 20px;
+    border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -91,8 +93,8 @@
 }
 
 #map {
-    width: 95%;
-    height: 70vh;
+    width: 100%;
+    height: 40.5rem;
     position: relative;
     z-index: 2;
 }
@@ -109,11 +111,16 @@
 .contenitoreMapRet{
     display: flex;
     gap: 0;
+    padding: 0.4rem;
+    padding-bottom: 0;
 }
     .mappa-interattiva{
-        width: 300px;
-        height: 700px;
+        width: 25%;
+        height: 40.5rem;
         background-color: white;
+        display: grid;
+        grid-template-rows:20vh 20vh 20vh ;
+        gap: 2vh;
     }
 
 
@@ -143,3 +150,24 @@
         border-radius: 2rem;
     }
 
+.startBtn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.primaTappa-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.destinazione-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prima-tappa{
+    margin-bottom: 8vh;
+}

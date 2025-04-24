@@ -91,7 +91,7 @@ if (latString && lonString) {
                     }, 3000);
 
                     let primaTappa = document.querySelector('.prima-tappa');
-                    primaTappa.innerHTML = "Prima tappa: Raggiunta!! ";
+                    primaTappa.src = "/Immagini/tappa-Raggiunta.png";
 
                 } else {
                     i++;
@@ -112,7 +112,7 @@ if (latString && lonString) {
 
                 console.log("🏁 Marker arrivato alla destinazione finale.");
                 let destinazione = document.querySelector('.destinazione');
-                destinazione.innerHTML = "Destinazione Raggiunta!!";
+                destinazione.src = "/Immagini/destinazione-raggiunta.png";
             }
         }
         
@@ -125,7 +125,6 @@ if (latString && lonString) {
                 moveMarker();
             }
         });
-
     });
 
 }
