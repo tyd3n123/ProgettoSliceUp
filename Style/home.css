@@ -101,10 +101,30 @@ body {
   border-radius: 20px;
   font-weight: bold;
   display: inline-block;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-button:hover {
+  transform: scale(1.1);
+  background-color: #ff4d5a;
+  box-shadow: 0 0 20px rgba(230, 57, 70, 0.7);
 }
 
 .hero-image img {
   width: 550px;
   border-radius: 10px;
   transform: translateX(-80px);
+  animation: float 3s ease-in-out infinite; 
+}
+
+@keyframes float {
+  0% {
+    transform: translateX(-80px) translateY(0px);
+  }
+  50% {
+    transform: translateX(-80px) translateY(-15px);
+  }
+  100% {
+    transform: translateX(-80px) translateY(0px);
+  }
 }
