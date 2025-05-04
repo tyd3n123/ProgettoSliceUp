@@ -12,24 +12,24 @@
   }
   
   body {
-    font-family: 'FontCustom', 'arial';
+    font-family: 'ubuntu', 'arial';
     background-color: rgb(253, 243, 231);
   }
 
  /*----------------------------------------------------*/
-
-/* Navbar aggiornata */
+/* Navbar aggiornata */   
 .navbar {
-    background-color: #fdb813;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    position: relative; 
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   }
   
- /* Ridimensionamento del logo */
-.navbar .logo img {
+  /* Ridimensionamento del logo */
+  .navbar .logo img {
     height: 50px; 
     width: auto; 
     object-fit: contain; 
@@ -38,7 +38,7 @@
   .nav-links {
     list-style: none;
     display: flex;
-    gap: 100px;
+    gap: 70px;
     margin: 0 auto; 
   }
   
@@ -48,6 +48,20 @@
     color: #000;
     font-size: 18px;
   }
+  
+  .cart-e-btn{
+    display: flex;
+    gap: 20px;
+    justify-content: rig;
+  }
+  
+  .nav-li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
 
  /*----------------------------------------------------*/
 
@@ -150,10 +164,8 @@
 }
     .contenuto-popUp{
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 1.5rem;
         background-color: white;
-        padding: 2rem;
+        padding: 0.75rem;
         border-radius: 2rem;
     }
 
@@ -177,4 +189,14 @@
 
 .prima-tappa{
     margin-bottom: 8vh;
+}
+
+.chiudi-popup1{
+    display: flex;
+    padding: 0;
+    margin:0;
+}
+
+.disegno-popup{
+    border-radius: 2rem;
 }

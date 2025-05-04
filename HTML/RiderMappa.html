@@ -20,6 +20,10 @@
     <!-- leafleting routing machine js -->
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -27,19 +31,20 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar">
-        <div class="logo">
-
+          <div class="logo">
+  
             <!-- Spazio per il logo -->
             <img src="/Immagini/logonero.png" alt="Slice Up Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="/HTML/home.html">Home</a></li>
-            <li><a href="/HTML/Ristoranti.html">Ristoranti</a></li>
-            <li><a href="/HTML/cart.html">Carrello</a></li>
-        </ul>
+          </div>
+          <div class="nav-links">
+            <li class="nav-li"><a href="/HTML/home.html">Home</a></li>
+            <li class="nav-li"><a href="/HTML/Ristoranti.html">Ristoranti</a></li>
+          </div> 
+          <div class="cart-e-btn">
+            <a href="/HTML/cart.html"><img class="immagine-carrello" src="/Immagini/online-shopping.png" width="35px"></a>
+          </div>
         </nav>
-    </header>
-
+      </header>
 
 
     <div class="contenitoreMapRet">
@@ -55,8 +60,10 @@
    
     <div class="popUp-destinazione">
         <div class="contenuto-popUp">
-            <span class="chiudi-popup">&times;</span>
-            <p>Destinazione raggiunta con successo!!</p>
+            <div class="chiud-popup1">
+                <span class="chiudi-popup">&times;</span>
+            </div>
+            <img class="disegno-popup" src="../Immagini/PopUPimg.png" width="400px" >
         </div>
     </div>
 

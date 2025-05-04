@@ -77,12 +77,13 @@ body::before {
 
 /* Navbar aggiornata */   
 .navbar {
-  background-color: #fdb813;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
   position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Ridimensionamento del logo */
@@ -95,7 +96,7 @@ body::before {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 100px;
+  gap: 70px;
   margin: 0 auto; 
 }
 
@@ -105,6 +106,36 @@ body::before {
   color: #000;
   font-size: 18px;
 }
+
+.nav-ordinaOra{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  padding-right:20px;
+  padding-left: 20px;
+  font-weight:bold;
+  border-radius:5px;
+  border: none;
+}
+.div-navOrdinaOra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-e-btn{
+  display: flex;
+  gap: 20px;
+  justify-content: rig;
+}
+
+.nav-li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 /*----------------------------------------------------*/ 
 
