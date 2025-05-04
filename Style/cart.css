@@ -11,42 +11,57 @@
     box-sizing: border-box;
   }
   body {
-    font-family: 'FontCustom';
+    font-family: 'ubuntu';
     background-color: #fdf3e7;
   }
 
  /*----------------------------------------------------*/
  
-/*Navbar*/
+/* Navbar aggiornata */   
 .navbar {
-    background-color: #fdb813;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    position: relative; 
-  }
-  
- /* Ridimensionamento del logo */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Ridimensionamento del logo */
 .navbar .logo img {
-    height: 50px; 
-    width: auto; 
-    object-fit: contain; 
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 100px;
-    margin: 0 auto; 
-  }
-  
-  .nav-links li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    font-size: 18px;
-  }
+  height: 50px; 
+  width: auto; 
+  object-fit: contain; 
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+  margin: 0 auto; 
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+}
+
+.cart-e-btn{
+  display: flex;
+  gap: 20px;
+  justify-content: rig;
+}
+
+.nav-li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
   /*----------------------------------------------------*/
 .carrello{
