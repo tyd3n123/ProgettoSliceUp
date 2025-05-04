@@ -160,36 +160,49 @@
           box-shadow: 3px 4px 10px rgba(119, 119, 119, 0.3);
         }
 
+/* Stile di base per tutti gli elementi listaCart */
 .listaCart {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: white;
-      padding: 10px;
-      gap: 5px;
-    }
-  
-  .pulsante-rimuovi {
-    margin-left: auto; /* Spinge il pulsante tutto a destra */
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+  gap: 5px;
+  width: 800px;
+  padding: 20px;
+  margin-bottom: 5px; /* Aggiungiamo un piccolo spazio tra gli elementi */
+  border-radius: 0; /* Nessun arrotondamento di default */
+}
 
-  .listaCart{
-    width: 800px;
-    padding: 20px;
-    display: flex;
-  }
-    .pulsante-rimuovi{
-      padding: 4px;
-      padding-left: 6px;
-      padding-right: 6px;
-      border: none;
-      background-color: red;
-      color: white;
-      box-shadow: 0px 0px 10px rgb(161, 161, 161);
-      cursor: pointer;
-    }
+/* Stile per il primo elemento nella lista */
+.carrello .listaCart:first-child {
+  border-radius: 15px 15px 0 0; /* Solo gli angoli superiori arrotondati */
+}
+
+/* Stile per l'ultimo elemento nella lista */
+.carrello .listaCart:last-child {
+  border-radius: 0 0 15px 15px; /* Solo gli angoli inferiori arrotondati */
+  margin-bottom: 0; /* Rimuoviamo il margine inferiore dall'ultimo elemento */
+}
+
+/* Se c'è un solo elemento nella lista, applica entrambi gli stili */
+.carrello .listaCart:only-child {
+  border-radius: 15px; /* Tutti gli angoli arrotondati */
+}
   
-  /* Fix for the background animation */
+.pulsante-rimuovi {
+  margin-left: auto; /* Spinge il pulsante tutto a destra */
+  padding: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border: none;
+  background-color: red;
+  color: white;
+  box-shadow: 0px 0px 10px rgb(161, 161, 161);
+  cursor: pointer;
+}
+  
+/* Fix for the background animation */
 .background-container {
   position: fixed;  /* Fixed position to cover the entire viewport */
   top: 0;
@@ -229,4 +242,3 @@
       300px 0;      /* Adattato per la nuova dimensione */
   }
 }
-
