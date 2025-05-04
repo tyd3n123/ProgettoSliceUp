@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'FontCustom';
+  src: url('/Fonts/JETSans-Regular.otf') format('otf'),
+       url('/Fonts/JETSans-Bold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +13,7 @@
 }
 
 body {
-  font-family: 'ubuntu';
+  font-family: 'FontCustom';
   position: relative;
   min-height: 100vh;
   /* Ho eliminato il background-color per vedere meglio l'immagine */

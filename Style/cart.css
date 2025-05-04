@@ -1,11 +1,17 @@
-
+@font-face {
+  font-family: 'FontCustom';
+  src: url('/Fonts/JETSans-Regular.otf') format('otf'),
+       url('/Fonts/JETSans-Bold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   body {
-    font-family: 'ubuntu';
+    font-family: 'FontCustom';
     background-color: #fdf3e7;
   }
 
