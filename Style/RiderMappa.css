@@ -129,18 +129,148 @@
 }
 
 
+@font-face {
+    font-family: 'FontCustom';
+    src: url('/Fonts/JETSans-Regular.otf') format('otf'),
+         url('/Fonts/JETSans-Bold.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'ubuntu', 'arial';
+    background-color: rgb(253, 243, 231);
+    height: 100vh; /* Use full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    overflow: hidden; /* Prevent scrolling */
+  }
+
+ /*----------------------------------------------------*/
+/* Navbar aggiornata */   
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Ridimensionamento del logo */
+  .navbar .logo img {
+    height: 50px; 
+    width: auto; 
+    object-fit: contain; 
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    margin: 0 auto; 
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 18px;
+  }
+  
+  .cart-e-btn{
+    display: flex;
+    gap: 20px;
+    justify-content: rig;
+  }
+  
+  .nav-li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+
+ /*----------------------------------------------------*/
+
+
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Contenitore principale */
+.container {
+    width: 100%;
+    height: 100%; /* Use full height of parent */
+    display: flex;
+    gap: 0;
+    background-color:rgb(253, 243, 231); 
+}
+
+
+
+/* Mappa */
+#map {
+    width: 100%;
+    height: 100%; /* Use full height of container */
+    border: 2px solid #ccc; /* Bordo sottile grigio */
+}
+
+#startButton{
+    margin: 10px;
+    margin-left:15px;
+    padding:20px;
+    padding-left:50px;
+    padding-right:50px;
+    font-size: 20px;
+    border:none;
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#startButton:hover{
+    background-color: rgb(199, 0, 0);
+}
+#startButton:active{
+    background-color: rgb(255, 78, 78);
+}
+
+.leaflet-routing-container .leaflet-bar .leaflet-control{
+    display: none;
+}
+
+.leaflet-routing-alt{
+    display:none;
+}
+
+
 .contenitoreMapRet{
     display: flex;
     gap: 0;
-    padding: 0.4rem;
     padding-bottom: 0;
+    flex: 1; /* Take up all available space */
+    height: calc(100vh - 70px); /* Full viewport height minus navbar height */
+    overflow: hidden; /* Prevent scrolling */
 }
     .mappa-interattiva{
         width: 25%;
-        height: 40.5rem;
-        background-color: white;
+        height: 100%; /* Use full height of parent */
+        background-color: #ffbe5b;
         display: grid;
-        grid-template-rows:20vh 20vh 20vh ;
+        grid-template-rows: 1fr 1fr 1fr; /* Equal distribution */
         gap: 2vh;
     }
 
