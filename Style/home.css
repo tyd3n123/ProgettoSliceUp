@@ -24,7 +24,7 @@ body {
   text-align: center;
   /* img size is 50x50 */
   background: url("../Immagini/logoneromini.png") repeat 0 0;
-  -webkit-animation: bg-scrolling-reverse 5.92s infinite;
+  -webkit-animation: bg-scrolling-reverse 1s infinite;
   /* Safari 4+ */
   -moz-animation: bg-scrolling-reverse 1s infinite;
   /* Fx 5+ */
