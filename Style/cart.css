@@ -61,9 +61,7 @@
   justify-content: center;
 }
 
-
-
-  /*----------------------------------------------------*/
+/*----------------------------------------------------*/
 .carrello{
   margin-right: 30px;
   margin: 30px;
@@ -84,81 +82,123 @@
     border-radius: 15px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     padding: 30px;
-  }
+}
 
-  #pannello-utente{
-    border-radius: 15px; /* Arrotondamento degli angoli */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra */
-    padding: 20px;
-    display: inline-block;
-    background-color: white;
-    margin-right: 30px;
-    margin: 30px;
-    zoom: 1.5;
-  }
-      #items{
-        display: inline-block;
-        margin: 10px; 
-        margin-top: 15px;
-        }
-      #dati-utente{
-        margin:10px;
-        margin-top:5px;
-      }
-        #address{
-          display: inline-block;
-          margin: 5px;
-        }
-        #nome{
-          display: block;
-          margin: 5px;
-          margin-bottom: 9px;
-        }
-        #cognome{
-          display: block;
-          margin: 5px;
-        }
-        #totale{
-          display: inline-block;
-          margin:10px;
-        }
-      #btn-invioDati{
-        margin: 10px;
-      }
-        .btn-invioDati1{
-          margin: 6px;
-          padding: 8px;
-          border: none;
-          background-color: #ff0000;
-          color: white;
-          font-family: "ubuntu";
-          cursor: pointer;
-          transition: opacity 0.1s, background-color 0.1s;
-        }
-        .btn-invioDati1:hover{
-          opacity: 0.8;
-          background-color:hsl(0, 100%, 40%);
-          box-shadow: 3px 4px 10px rgba(119, 119, 119, 0.3);
-        }
-        .btn-invioDati2{
-          position: fixed;
-          margin: 6px;
-          padding: 8px;
-          border-color: red;
-          border-width: 1px;
-          border-radius: 15px;
-          background-color: #ffffff;
-          color: rgb(255, 0, 0);
-          font-family: "ubuntu";
-          font-weight: bold;
-          cursor: pointer;
-          transition: border-width 0.1s, background-color 0.1s;
-        }
-        .btn-invioDati2:hover{
-          background-color: #ffe1e1;
-          border-width: 2px;
-          box-shadow: 3px 4px 10px rgba(119, 119, 119, 0.3);
-        }
+/* Pannello utente ridisegnato */
+#pannello-utente {
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  background-color: white;
+  margin: 30px;
+  width: 350px;
+}
+
+/* Flex container per conteggio elementi e totali */
+#parte-item, #parte-totale {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Stili per le intestazioni */
+#items, #totale {
+  font-weight: 500;
+  color: #333333;
+}
+
+/* Stili per le etichette del contatore */
+#tot-items, #tot-totale {
+  font-weight: 500;
+  color: #ff0000;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+/* Styling per i campi di input migliorati */
+#dati-utente {
+  margin: 10px 0 20px 0;
+}
+
+#dati-utente input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-family: 'ubuntu', sans-serif;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#dati-utente input:focus {
+  outline: none;
+  border-color: #ff0000;
+  box-shadow: 0 2px 8px rgba(255, 0, 0, 0.15);
+}
+
+#dati-utente input::placeholder {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+/* Divisore migliorato */
+.divisore {
+  margin: 20px 0;
+  border: none;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+/* Container dei pulsanti */
+#btn-invioDati {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Pulsanti migliorati */
+.btn-invioDati1 {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff0000;
+  color: white;
+  font-family: "ubuntu";
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.2);
+}
+
+.btn-invioDati1:hover {
+  background-color: #e60000;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 0, 0, 0.25);
+}
+
+.btn-invioDati2{
+  position: fixed;
+  margin: 6px;
+  padding: 8px;
+  border-color: red;
+  border-width: 1px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+  font-family: "ubuntu";
+  font-weight: bold;
+  cursor: pointer;
+  transition: border-width 0.1s, background-color 0.1s;
+}
+
+.btn-invioDati2:hover{
+  background-color: #ffe1e1;
+  border-width: 2px;
+  box-shadow: 3px 4px 10px rgba(119, 119, 119, 0.3);
+}
 
 /* Stile di base per tutti gli elementi listaCart */
 .listaCart {

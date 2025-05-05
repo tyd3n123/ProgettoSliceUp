@@ -82,38 +82,66 @@ body {
   gap: 50px;
 }
 
-    #img1{
-      border-radius: 30px;
-      cursor: pointer;
-      transition: filter 0.3s ease;
-    }
-    #img1:hover{
-      filter: brightness(1.3);
-    }
-    #img2{
-      border-radius: 30px;
-      cursor: pointer;
-      transition: filter 0.3s ease;
-    }
-    #img2:hover{
-      filter: brightness(1.3);
-    }
-    #img3{
-      border-radius: 30px;
-      cursor: pointer;
-      transition: filter 0.3s ease;
-    }
-    #img3:hover{
-      filter: brightness(1.3);
-    }
-    #img4{
-      border-radius: 30px;
-      cursor: pointer;
-      transition: filter 0.3s ease;
-    }
-    #img4:hover{
-      filter: brightness(1.3);
-    }
+/* Stile holographic per tutte le immagini pizze */
+#img1, #img2, #img3, #img4 {
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+#img1::before, #img2::before, #img3::before, #img4::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(0, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 2;
+}
+
+#img1:hover, #img2:hover, #img3:hover, #img4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(248, 255, 255, 0.8);
+}
+
+#img1:hover::before, #img2:hover::before, #img3:hover::before, #img4:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+/* Assicurarsi che le immagini siano sopra l'effetto holografico */
+#img1, #img2, #img3, #img4 {
+  border-radius: 30px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.dettagli-pizza {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
 
 .scritte{
   width: 300px;         
@@ -146,11 +174,6 @@ body {
 #tabella-carrello{
 display:block;
 height: 30px;
-}
-
-.dettagli-pizza{
-  display: flex;
-  gap: 0.5rem;
 }
 
 /* Animazione pizze fluttuanti */
